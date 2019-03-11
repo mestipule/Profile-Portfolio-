@@ -1,9 +1,16 @@
-div{
-}        
+body{
+  background-image:url("./assest/images/ghost.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#section{
+  background: transparent;
+}
 #header{
 
     font-size: 24pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: heavenly;
     background-color: #4aaaa5;
     width: 250px;
     display: inline-block;
@@ -19,23 +26,25 @@ div{
 }
 
 #nav a {
-    color: #A0A2A3;
+    color: black;
 }
+navContact{
 
-.about{ 
+}
+.about{
     border-right: 2px solid #f0f0f0;
     padding-right: 8px;
-    
+    color: black;
 }
-
 #gray-box{
    padding: 15px;
     min-height: 250px;
     width: 100%;
-    background-color: #f2f2f2;
-
+    background: transparent;
 }
-
+#whiteBackground{
+  opacity: 0.2;
+}
 section{
     background-color: white;
     width: 750px;
@@ -63,8 +72,8 @@ p{
     width: 250px;
     color: #4aaaa5;
     margin-left: 15px;
-    
-    
+
+
 }
 
 .hline{
@@ -91,7 +100,7 @@ img{
     height: 35px;
     color: white;
     text-align: center;
-    background-color:#666666; 
+    background-color:#666666;
     border-top: #4aaaa5 solid 5px;
     margin: 0px;
     vertical-align: bottom;
@@ -123,7 +132,7 @@ textarea{
 .portfoliotile img{
     height: auto;
     width: 225px;
-   
+
 }
 
 .portfoliotile{
@@ -148,4 +157,9 @@ textarea{
         width: 50%;
     }
 }
-
+#copyright{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
