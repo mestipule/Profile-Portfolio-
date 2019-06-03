@@ -1,22 +1,27 @@
 body{
-  background-image:url("./assest/images/ghost.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+.background{
+   background-image:url("./assest/images/ghost.jpg"); 
+   opacity: 0.5;
+}
+
+body 
 #section{
   background: transparent;
 }
 #header{
 
     font-size: 24pt;
-    font-family: heavenly;
-    background-color: #4aaaa5;
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
     width: 250px;
     display: inline-block;
     margin-left: 12%;
     padding: 10px;
-    color: white;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
@@ -28,9 +33,7 @@ body{
 #nav a {
     color: black;
 }
-navContact{
 
-}
 .about{
     border-right: 2px solid #f0f0f0;
     padding-right: 8px;
@@ -43,7 +46,7 @@ navContact{
     background: transparent;
 }
 #whiteBackground{
-  opacity: 0.2;
+    background: transparent;
 }
 section{
     background-color: white;
@@ -56,10 +59,11 @@ section{
 p{
 
     width: 60%;
-    font-size: 15;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
     text-align: justify;
-    background-color: white;
+    background-color: transparent;
     display: inline-block;
     margin-left: 25px;
     margin-right: 25px;
@@ -70,7 +74,7 @@ p{
     font-size: 25pt;
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
-    color: #4aaaa5;
+    color: black;
     margin-left: 15px;
 
 
@@ -106,7 +110,7 @@ img{
     vertical-align: bottom;
 }
 
-#container{
+.container{
     width: 750px;
 }
 
