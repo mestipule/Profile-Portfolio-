@@ -33,7 +33,9 @@ body
 #nav a {
     color: black;
 }
-
+.navBar{
+    font-family: 'Anton', sans-serif;
+}
 .about{
     border-right: 2px solid #f0f0f0;
     padding-right: 8px;
@@ -41,8 +43,8 @@ body
 }
 #gray-box{
    padding: 15px;
-    min-height: 250px;
-    width: 100%;
+    min-height: 540px;
+    width: 95%;
     background: transparent;
 }
 #whiteBackground{
@@ -50,15 +52,12 @@ body
 }
 section{
     background-color: white;
-    width: 750px;
     margin-left: 11%;
     margin-top: 25px;
     margin-bottom: 25px;
 
 }
 p{
-
-    width: 60%;
     font-size: 17pt;
     font-family: 'Merienda', cursive;
     font-weight: bold;
@@ -89,7 +88,6 @@ p{
 }
 
 img{
-    border: 1px solid rgb(148, 42, 42);
     border-radius: 4px;
     padding: 5px;
     width: 150px;
@@ -134,9 +132,8 @@ textarea{
 }
 
 .portfoliotile img{
-    height: auto;
-    width: 225px;
-
+    height: 275px;
+    width: 500px;
 }
 
 .portfoliotile{
@@ -145,15 +142,16 @@ textarea{
 
 .portfoliotile h6{
     background: #4aaaa5;
-    width: 217px;
+    width: 485px;
     height: 41px;
     padding: 10px;
     margin-left: 29px;
     text-align: center;
     vertical-align: bottom;
     color: white;
-    top: 92px;
+    top: 210px;
     position: absolute;
+    font-size: large;
 }
 /* On screens that are 1000px wide or less, go from four columns to two columns */
 @media screen and (max-width: 980px;){
@@ -161,9 +159,29 @@ textarea{
         width: 50%;
     }
 }
+
+.imageContainer{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+.imageContainer img{
+    width: 300px;
+}
+.textContainer{
+    display: inline-block;
+    width: 65%;
+    background:rgba(255,255,255,0.5);
+}
+
 #copyright{
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.fonts{
+    font: 25px;
+    color: white;
+    text-decoration: none;
 }
