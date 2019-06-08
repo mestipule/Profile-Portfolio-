@@ -5,6 +5,7 @@ body{
 }
 .background{
    background-image:url("./assest/images/ghost.jpg"); 
+   /* background: black; */
    opacity: 0.5;
 }
 
@@ -185,3 +186,4 @@ textarea{
     color: white;
     text-decoration: none;
 }
+
