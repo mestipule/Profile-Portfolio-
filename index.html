@@ -1,72 +1,546 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" type="text/css" href="portfolio.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">
-  <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body style="background-image:url(./assest/images/ghost.jpg);">
-  <div  id="background">
-    <div>
-      <div id="header">
-        May Ewers
-      </div>
-  
-      <nav id="nav" class="navBar">
-        <a class="about" href="index.html">About</a>
-        <a id="navContact" class="about" href="contact.html">Contact</a>
-        <a  class="about" href="portfolio.html">Portfolio</a>
-      </nav>
-    </div>
-  
-    <main id="gray-box">
-      <section id="section">
-        <header id="sec-head">About Me</header>
-        <div class="hline"></div>
-  
-        <div>
-          <div>
-            <div class="imageContainer">
-              <img src="./assest/images/pic.png" />
-            </div>
-            <div class="textContainer"> 
-              <p>My name is May Gaila Ewers. I am originally from the Philippines. I am fluent in two languages, Filipino and English.
-                I graduated from Don Bosco College in the Philippines with a BS in technical education and a minor in electronics. </p>
-              <p>
-                I recently graduated from the full stack web development bootcamp from George Washington University. 
-                I am seeking a career where I can develop exciting websites and work with a great team.</p>
-              <p> Please view my github repositories to see some of the projects that I have worked on.
-              </p>
-              <div class="logos">
-                <a href="https://github.com/mestipule">https://github.com/mestipule</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  
-  
-  
-    <section id=copyright>
-    </section>
-  </div>
-  
+<body>
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+
+        </div>
+    </div>
+    <!-- ./Preloader -->
+    
+    <!-- header -->
+    <header class="navbar-fixed-top">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ./header -->
+    
+    <!-- home -->
+    <div class="section" id="home" data-stellar-background-ratio="0.5" background-image="./assets/images/ghost.1.jpg">
+        <div class="container">
+            <div class="disply-table">
+                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
+                    <div class="myName">
+                        <h4 >May Ewers</h4>
+                        <h1 >Front<br /> End Developer</h1> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./home -->
+    
+    <!-- about -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-6" data-aos="fade-up">
+                <h4>01</h4>
+                <h1 class="size-50">Know <br /> About me</h1>
+                <div class="h-50"></div>
+                <p>My name is May Gaila Ewers. I am originally from the Philippines. I am fluent in two languages, Filipino and English. I graduated from Don Bosco College in the Philippines with a BS in technical education and a minor in electronics. I recently graduated from the full stack web development bootcamp from George Washington University. I am seeking a career where I can develop exciting websites and work with a great team. Please view my github repositories to see some of the projects that I have worked on.</p>
+                
+                <!-- <div class="h-50"></div> <img src= width="230" alt="" /> -->
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-6 about-img-div">
+                <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
+                <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+    
+    <!-- experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>02</h4>
+                <h1 class="size-50">My <br /> Experience</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">January 2016 - Present</p>
+                            <h3>Private Family</h3>
+                            <h4>Chevy Chase, MD</h4>
+                            <p><strong>House Manager</strong>
+                                <br>Currently working for a private family, who cares for the house and family needs.
+                                <br>Collaborated with contractors for scheduling and expectations for repair and maintenance work. 
+                                <br>Planned and scheduled dinners, contracted work, and activities for the children’s playdates.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">June 2006 - August 2006</p>
+                            <h3>Basic Electronics Substitute Teacher</h3>
+                            <h4>Don Bosco high School</h4>
+                            <p>Taught freshmen class through senior class of Basic Electronics.
+                               <br>Ran demonstrations and laboratory experiments. 
+                               <br>Maintained equipment and the laboratory.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">May 2005 - June 2006</p>
+                            <h3>Quality Assurance Tester</h3>
+                            <h4>Ford Motors Philippines</h4>
+                            <p><strong>Fit and Finish Tester</strong>
+                                <br>Assists and cooperate with co-workers, supervisor and manger.
+                                <br>Pay close attention to details, independently analyze the issues and recommend changes.
+                                <br>Provide a consistent and clear verbal and written communication.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->
+    
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>03</h4>
+                <h1 class="size-50">My <br /> Projects</h1> 
+            </div>
+            <!-- main container -->
+            <div class="main-container portfolio-inner clearfix">
+                <!-- portfolio div -->
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <!-- portfolio_filter -->
+                        <div class="categories-grid wow fadeInLeft">
+                            <nav class="categories">
+                                <ul class="portfolio_filter">
+                                    <!-- <li><a href="" class="active" data-filter="*">All</a></li>
+                                    <li><a href="" data-filter=".photography">Photography</a></li>
+                                    <li><a href="" data-filter=".logo">Logo</a></li>
+                                    <li><a href="" data-filter=".graphics">Graphics</a></li>
+                                    <li><a href="" data-filter=".ads">Advertising</a></li>
+                                    <li><a href="" data-filter=".fashion">Fashion</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- portfolio_filter -->
+                        
+                        <!-- portfolio_container -->
+                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6  crystal">
+                                <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="./assets/images/crystal-game.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Crystal-Game</span> </div>
+                                                <!-- <em>Fashion / Logo</em> </div> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 train">
+                                <a id="demo02" href="#animatedModal2" class="portfolio_item"> <img src="./assets/images/trainScheduler.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Train Scheduler</span>     </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 liri">
+                                <a id="demo03" href="#animatedModal3" class="portfolio_item"> <img src="./assets/images/liri.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Liri</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 wordGame">
+                                <a id="demo04" href="#animatedModal4" class="portfolio_item"> <img src="./assets/images/wordgame.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Word Game</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                          
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 trivia">
+                                <a id="demo05" href="#animatedModal5" class="portfolio_item"> <img src="./assets/images/trivia-game.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Trivia Game</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 friendFinder">
+                                <a id="demo06" href="#animatedModal6" class="portfolio_item"> <img src="./assets/images/friendfinder.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Friend Finder</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 gif">
+                                <a id="demo07" href="#animatedModal7" class="portfolio_item"> <img src="./assets/images/gif.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Giphy API</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 clickyGame">
+                                <a id="demo08" href="#animatedModal8" class="portfolio_item"> <img src="./assets/images/marvel.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Clicky Game</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 myTravel">
+                                <a id="demo09" href="#animatedModal9" class="portfolio_item"> <img src="./assets/images/myTravel.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>My Travel</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                        </div>
+                        <!-- end portfolio_container -->
+                    </div>
+                    <!-- portfolio -->
+                </div>
+                <!-- end portfolio div -->
+            </div>
+            <!-- end main container -->
+        </div>
+    </div>
+    <!-- ./projects -->
+    
+    <!-- contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>04</h4>
+                <h1 class="size-50">Contact  Me</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+
+                <h3> Mobile Numberr</h3>
+                <p>571-435-3255</p>
+                <h3>Email</h3>
+                <p>mestipul@gmail.com</p>
+
+                <h3>Social Network</h3>
+
+                <ul class="social">
+                    <li><a href="https://github.com/mestipule"><i class="ion-social-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/may-ewers-04b85947/"><i class="ion-social-linkedin"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-8" data-aos="fade-up">
+                <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" />
+                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
+                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
+                    <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
+                    <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
+                    <div id="success">
+                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
+                    </div>
+                    <div id="error">
+                        <p> Something went wrong, try refreshing and submitting the form again. </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ./contact -->
+
+    <!--DEMO01-->
+    <div id="animatedModal" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Crystal Game</h2>
+                        <div class="h-50"></div>
+                        <p>Play Crystal Collector! 
+                                In this game your gems are given a random value. The value of the gems are hidden. 
+                                <br>You win the game by getting the total number given and you lose if you go over the target number. 
+                                <br>Each time the game starts the values of the crystals will change. 
+                                <br>Good Luck! 
+                        </p>
+                        <br />
+                        <br /> <img src="./assets/images/crystal-game.png" alt="" class="img-responsive" />
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="animatedModal2" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal2 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Train Scheduler</h2>
+                        <div class="h-50"></div>
+                        <p>The train scheduler will allow you to enter in the trains you wish to track and provides a notice on how long until the train will arrive. </p>
+                        <br /> To track a new train navigate to the bottom of the page and see the form to create a new train. 
+                        <br> Start by entering the train name. After that enter the destination the train will be traveling to. 
+                        <br> The time that the train first arrives entered in 24 hour time. 
+                        <br>The final field is the frequency in mintues that the train arrives. 
+                        <br>Once these fields are entered press submit and the form will be submitted to Google Firebase. 
+                        <br>If the page is refreshed then all the trains will be still be available. 
+                        <br>
+                        <br>
+                        <br /> <img src="./assets/images/trainScheduler.png" alt="" class="img-responsive" />
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal3" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal3 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Liri</h2>
+                        <div class="h-50"></div>
+                        <p>Liri is a Language Interpretation and Recognition Interface.
+                            <br>A command line node app that takes parameters of data. 
+                            <br>Will search songs in Spotify, Bands in Town for concerts and OMDB for movies.
+                        </p>
+                        <br>
+                        <br />
+                        <br /> <img src="./assets/images/liri.png" alt="" class="img-responsive" />
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal4" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal4 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Word Game</h2>
+                        <div class="h-50"></div>
+                        <p></p>
+                        <br />
+                        <br /> <img src="./assets/images/wordgame.png" alt="" class="img-responsive" />
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal5" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal5 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Trivia Game</h2>
+                        <div class="h-50"></div>
+                        <br /> <img src="./assets/images/trivia-game.png" alt="" class="img-responsive" />
+                      
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal6" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal6 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Friend Finder</h2>
+                        <div class="h-50"></div>
+                        
+                        <br /> <img src="./assets/images/friendfinder.png" alt="" class="img-responsive" />
+                      
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal7" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal7 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Giphy API</h2>
+                        <div class="h-50"></div>
+                        <p>Choose your favorite Disney princess to see related gifs or add your own! 
+                        <br>When the page loads there are buttons at the top of the page that allows you to look up different sets of gifs. 
+                        <br>It is possible to add in additional custom gif searches/filters. 
+                        <br>First enter the term you would like to add into the text field and then press Find. 
+                        <br>This will add a new button to the right of the existing buttons. 
+                        <br>This action can be repeated as many times as you would like. 
+                        <br>The new custom buttons function the same as all the other buttons. </p>
+                        <br />
+                        <br /> <img src="./assets/images/gif.png" alt="" class="img-responsive" />
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal8" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal8 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Clicky Game</h2>
+                        <div class="h-50"></div>
+                        <p>
+
+                        </p>
+                        <br>
+                        <br /> <img src="./assets/images/marvel.png" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                       
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="animatedModal9" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal9 close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>My Travel</h2>
+                        <div class="h-50"></div>
+                        <p>This application serves as a one stop shop for users to search for flights, venues, events, restaurants, and hotels. 
+                        <br>Users are able to make a to-do-list of tasks that can be updated easing the stressful process of planning a trip.
+                        <br> You can sign up for using your email and password or if you are repeat visitors you can login.
+                        <br>After logging in, you would be able to find flights, find places of interest, hotles and to do list when traveling.</p>
+                        
+                        <br />
+                        <br /> <img src="https://github.com/tellomp/Project2/raw/master/public/images/SignUp.png" alt="" class="img-responsive" />
+                 
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
