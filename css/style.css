@@ -322,6 +322,11 @@ a.active {
     z-index: 1
 }
 
+.about-border .img-responsive {
+    width: 400px;
+    height: 380px
+}
+
 
 /* experience section
 ==================================================*/
