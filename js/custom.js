@@ -114,59 +114,35 @@ $(document).ready(function () {
     $("#demo09").animatedModal9();
    
     // Contact Form 	
-
-    // validate contact form
-    $(function () {
-        $('#contact-form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: {
-                    required: true
-                },
-                phone: {
-                    required: false
-                },
-                message: {
-                    required: true
-                }
-
-            },
-            messages: {
-                name: {
-                    required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
-                },
-                email: {
-                    required: "This field is required"
-                },
-                message: {
-                    required: "This field is required"
-                }
-            },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "GET",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
-
+    var config = {
+        apiKey: "AIzaSyBi6ahKUyVLMk8paMDhOrpTbLEE9dwQytI",
+        authDomain: "myresume-2343e.firebaseapp.com",
+        databaseURL: "https://myresume-2343e.firebaseio.com",
+        projectId: "myresume-2343e",
+        storageBucket: "",
+        messagingSenderId: "1084806413897",
+        appId: "1:1084806413897:web:1a4e9b1a24abbfdb"
+    }
+    firebase.initializeApp(config);
+    var database = firebase.database();
+    $("#contact-form #submit").on("click", function (event){
+        console.log("enter submit");
+        var name = $("#contact-form [name='name']").val().trim();
+        var email = $("#contact-form [name='email']").val().trim();
+        var phone = $("#contact-form [name='phone']").val().trim();
+        var message = $("#contact-form [name='message']").val().trim();
+        var newMessage = {
+            name : name,
+            email : email,
+            phone : phone,
+            message : message
+        };
+        database.ref().push(newMessage);
+        $("#contact-form [name='name']").val("");
+        $("#contact-form [name='email']").val("");
+        $("#contact-form [name='phone']").val("");
+        $("#contact-form [name='message']").val("");
+        return false;
     });
+
 });
